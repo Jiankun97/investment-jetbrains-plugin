@@ -1,0 +1,40 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>contact.kun.plugins.investment</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Investment</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="investment.plugins@kun.contact">Zhang Jiankun</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    <h1>investment - 一个免费的 IDE 插件，助您了解投资组合的当前情况</h1>
+    <p>investment 是一款早期开发的 IDE 插件，旨在为开发者提供便捷的投资组合实时数据查询功能。该插件简单易用，旨在帮助开发者迅速了解股票市场的最新动态。</p>
+    <h2>功能概述：</h2>
+    <ol>
+        <li>中国A股市场行情数据：investment 提供中国A股市场的自选个股当日行情数据，您可以轻松查询个股的最新价格、涨跌幅等重要信息。</li>
+    </ol>
+    <h2>未来路线图：</h2>
+    <ol>
+        <li>持仓管理：计划引入持仓成本价记录功能，以及根据成本价计算当日盈亏和浮动盈亏数据。这将帮助您更好地了解和管理自己的投资组合。</li>
+        <li>公募基金支持：为了更全面地满足开发者的需求，我们计划增加对中国公募基金的行情查看功能。您将能够查询公募基金的基本信息、净值、涨跌幅等信息。</li>
+        <li>数字货币支持：随着数字货币市场的兴起，我们也计划增加对数字货币的行情查看支持。这将使您能够轻松查询比特币、以太坊等主要数字货币的最新行情数据。</li>
+    </ol>
+    <p>需要注意的是，由于行情数据的特性，investment 插件提供的数据可能存在一定程度的延迟，仅供参考之用。</p>
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+</idea-plugin>
